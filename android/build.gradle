@@ -4,7 +4,7 @@ version '1.0'
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 33
+    compileSdkVersion flutter.compileSdkVersion
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -12,7 +12,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 19
+        minSdkVersion flutter.minSdkVersion
     }
 
     gradle.projectsEvaluated {
